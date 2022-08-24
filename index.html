@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/card-logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <title>Card details</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container__design">
+      <div class="container__design--cardFront">
+        <!-- <img src="./images/card-logo.svg" class="container__design--cardFront-logo"> -->
+        <!-- <div class="container__design--cardFront-number">0000 0000 0000 0000</div> -->
+        <!-- <div class="container__design--cardFront-details"> -->
+        <!-- <div class="container__design--cardFront-details-name">Tanishq Kaushal</div> -->
+        <!-- <div class="container__design--cardFront-details-date">00/00</div> -->
+        <!-- </div> -->
+        <img src="./images/bg-card-front-new.png" alt="" class="container__design--cardFront-img">
+      </div>
+      <div class="container__design--cardBack">
+        <!-- <div class="container__design--cardBack-text">000</div> -->
+        <img src="./images/bg-card-back.png" class="container__design--cardBack-img" alt="">
+      </div>
+    </div>
+    <div class="container__form--container">
+      <div class="container__form">
+        <div class="container__form--name">
+          <label class="container__form--name-title container__form--title" for="name">Cardholder Name</label>
+          <input type="text" id="name" class="container__form--name-input container__form--input"
+            placeholder="e.g. Jane Appleseed">
+        </div>
+        <div class="container__form--number">
+          <label for="number" class="container__form--number-title container__form--title">Card Number</label>
+          <input id="number" type="text" class="container__form--number-input container__form--input"
+            placeholder="e.g. 1234 5678 9123 0000">
+        </div>
+        <div class="container__form--details">
+          <div class="container__form--details-date">
+            <label for="date" class="container__form--details-date-title">Exp. Date (MM/YY)</label>
+            <div class="container__form--details-date-input">
+              <input id="date" class="container__form--details-date-input-month container__form--details-date-input"
+                placeholder="MM">
+              <input class="container__form--details-date-input-year container__form--details-date-input"
+                placeholder="YY">
+            </div>
+          </div>
+          <div class="container__form--details-cvc">
+            <label for="cvc" class="container__form--details-cvc-title">CVC</label>
+            <input id="cvc" class="container__form--details-cvc-input" placeholder="e.g. 123">
+          </div>
+        </div>
+        <div class="container__form--submit">
+          <button class="container__form--submit-button" type="submit">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
