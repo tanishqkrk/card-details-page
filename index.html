@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/card-logo.svg">
   <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
   <title>Card details</title>
 </head>
 
@@ -32,11 +33,13 @@
           <label class="container__form--name-title container__form--title" for="name">Cardholder Name</label>
           <input type="text" id="name" class="container__form--name-input container__form--input"
             placeholder="e.g. Jane Appleseed">
+          <div class="form-error" id="name-error">Name cannot be empty</div>
         </div>
         <div class="container__form--number">
           <label for="number" class="container__form--number-title container__form--title">Card Number</label>
           <input id="number" type="text" class="container__form--number-input container__form--input"
             placeholder="e.g. 1234 5678 9123 0000">
+          <div class="form-error" id="number-error">Card number cannot be empty</div>
         </div>
         <div class="container__form--details">
           <div class="container__form--details-date">
@@ -46,11 +49,14 @@
                 placeholder="MM">
               <input class="container__form--details-date-input-year container__form--details-date-input"
                 placeholder="YY">
+              <div class="form-error" id="date-error">Date cannot be empty</div>
             </div>
+
           </div>
           <div class="container__form--details-cvc">
             <label for="cvc" class="container__form--details-cvc-title">CVC</label>
             <input id="cvc" class="container__form--details-cvc-input" placeholder="e.g. 123">
+            <div class="form-error" id="cvc-error">CVC cannot be empty</div>
           </div>
         </div>
         <div class="container__form--submit">
